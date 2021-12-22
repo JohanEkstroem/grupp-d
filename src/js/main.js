@@ -1,2 +1,3 @@
-import {checking} from './navbar';
-console.log(checking())
+import { checking } from "./navbar";
+import { carousel } from "./carousel";
+carousel();
