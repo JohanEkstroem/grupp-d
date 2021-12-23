@@ -14,24 +14,46 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbarLogo">
+        <div class="logoHead">
+            <div class="logoContainer">
                 <img class="logo" src="./src/img/logo.png" />
                 <div class="logoText">
                     <a href="">Cinema Risbäck</a>
                 </div>
             </div>
-            <div class="navbarMenu">
-                <img src="./src//img/pixlr-bg-result(4).png" />
-                <a class="menuName" href="#">Filmer</a>
-                <a class="menuName" href="#">Biljetter</a>
-                <a class="menuName" href="#">Om oss</a>
-                <a class="menuName" href="#">Meny snacks</a>
-                <a class="menuName" href="#">Covid-info</a>
+        </div>
+        <nav>
+            <div class="topnav" id="navbar">
+                <img id="logoSanta" src="./src/img/pixlr-bg-result(4).png">
+                <a href="#home">Hem</a>
+                <a href="#news">Filmer</a>
+                <a href="#contact">Biljetter/reservation</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Om oss
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">FAQ</a>
+                        <a href="#">Återbetalningsgaranti</a>
+                        <a href="#">Historia</a>
+                        <a href="#">Öppettider</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Meny snacks
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Sortiment</a>
+                        <a href="#">Kampanj</a>
+                        <a href="#">Dricka/Kaffe</a>
+                        <a href="#">Menyer</a>
+                    </div>
+                </div>
+                <a href="#">Covid-info</a>
+                <a href="javascript:void(0)" class="hamburger">&#9776;</a>
+
             </div>
-            <a href="#" class="hamburger" role="button">
-                <i class="fas fa-bars"></i>
-            </a>
         </nav>
     </header>
     <main class="mainContainer">
@@ -114,6 +136,7 @@
         </div>
     </footer>
     <script src="bundle.js"></script>
+
 </body>
 
 </html>
